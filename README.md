@@ -62,4 +62,4 @@ class student_DBAdmin(admin.ModelAdmin):
 ![alt text](<Screenshot 2026-10-06 220644-1.png>)
 
 ## RESULT
-Thus the program for creating Online Food Delivery Database using ORM hass been executed successfully
+Thus the program for creating Student details Database using ORM hass been executed successfully
