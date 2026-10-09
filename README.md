@@ -2,8 +2,7 @@
 ## Date: 09/10/26
 
 ## AIM
-To develop a Django Application to store and retrieve data from a Student details Database platform using Object Relational Mapping(ORM).
-
+To develop a Django Application to store and retrieve data from a Vehicle Service Database platform using Object Relational Mapping(ORM).
 
 
 ## DESIGN STEPS
@@ -62,4 +61,4 @@ class Vechicle_dBAdmin(admin.ModelAdmin):
 ![alt text](<Screenshot 2026-10-09 231835.png>)
 
 ## RESULT
-Thus the program for creating Student details Database using ORM hass been executed successfully
+Thus the program for creating Vehicle service Database using ORM hass been executed successfully
