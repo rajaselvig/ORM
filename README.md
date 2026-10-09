@@ -1,5 +1,5 @@
 # Ex02 Django ORM Web Application
-## Date: 06/10/26
+## Date: 09/10/26
 
 ## AIM
 To develop a Django Application to store and retrieve data from a Student details Database platform using Object Relational Mapping(ORM).
@@ -38,28 +38,28 @@ Execute Django admin using localhost and create details for 10 entries
 admin.py
 
 from django.contrib import admin
-from .models import student_DB,student_DBAdmin
-admin.site.register(student_DB,student_DBAdmin)
+from.models import Vechicle_dB,Vechicle_dBAdmin
+admin.site.register(Vechicle_dB,Vechicle_dBAdmin)
 
 models.py
 
 from django.db import models
 from django.contrib import admin
-class student_DB(models.Model):
-    Ref_No=models.IntegerField()
-    Name=models.CharField(max_length=10)
-    Dob=models.DateField()
-    Email=models.EmailField()
-    Percent=models.FloatField()
-    Address=models.TextField()
-    Hobbies=models.CharField(max_length=20)
-class student_DBAdmin(admin.ModelAdmin):
-    list_display=["Ref_No","Name","Dob"]
+class Vechicle_dB(models.Model):
+     license_no=models.CharField(max_length=15,primary_key=True)
+     faults_found=models.TextField()
+     owner_name=models.CharField(max_length=30)
+     owner_contact=models.IntegerField()
+     owner_address=models.TextField()
+     deposit_payed=models.FloatField()
+     total_amount=models.FloatField()
+class Vechicle_dBAdmin(admin.ModelAdmin):
+    list_display=["license_no","faults_found","owner_name","owner_contact","owner_address","deposit_payed","total_amount"]
 ```
 
 ## OUTPUT
 
-![alt text](<Screenshot 2026-10-06 220644-1.png>)
+![alt text](<Screenshot 2026-10-09 231835.png>)
 
 ## RESULT
 Thus the program for creating Student details Database using ORM hass been executed successfully
